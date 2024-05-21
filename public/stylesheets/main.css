@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+.content {
+    margin: 2%;
+    height: 96vh;
+}
+
+/**
+HEAD
+*/
+.header {
+    border-radius: 30px;
+    height: 10%;
+    background: black;
+}
+
+header {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+/*
+Datos de entrada
+*/
+.datos {
+    display: grid; 
+    align-items: center;
+    border-radius: 30px;
+    height: 60%;
+    background: rgb(201, 227, 236);
+    margin: 10px 0px 10px 0px;
+}
+
+.entryData {
+    display: flex;
+    height: 80%;
+    padding: 0%;
+}
+.entryData div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 2%;
+    border-radius: 20px;
+    height: 80%;
+}
+.txtEntry { 
+    text-align: end;
+    font-size: x-large;
+    background: rgb(189, 189, 189);
+    width: 23%;  
+
+}
+.inputEntry{
+    background: rgb(189, 189, 189);
+    width: 73%;
+}
+input,select{
+    font-size: xx-large;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.resultados {
+    display: grid;
+    align-items: center;
+    border-radius: 30px;
+    height: 30%;
+    background: rgb(201, 237, 236);
+}
+.resData{ 
+    display: flex;
+    height: 70%;
+}
+.resData div{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gray; 
+    margin: 2%;
+    border-radius: 10px;
+    font-size: x-large;
+}
+.resTXT{
+    width: 23%;
+}
+.resTXT button{
+    margin: 0;
+    padding: 0;
+    border-radius: 10%;
+    font-size: x-large;
+    height: 80%;
+    width: 80%;
+}
+.resTXT div{
+    width: 100%;
+    height: 100%;
+}
+.restML{
+    width: 73%;
+}
