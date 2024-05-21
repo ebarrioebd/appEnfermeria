@@ -64,18 +64,23 @@ Datos de entrada
     height: 80%;
 }
 .txtEntry { 
+    font-family: system-ui;
     text-align: end;
     font-size: x-large;
-    background: rgb(189, 189, 189);
+    background: rgb(223 187 205);
     width: 23%;  
-
+    border: inset;
 }
 .inputEntry{
-    background: rgb(189, 189, 189);
+    border: inset;
+    background:rgb(185 206 245);
     width: 73%;
 }
-input,select{
+input{
     font-size: xx-large;
+}
+
+input,select{
     width: 80%;
     height: 50%;
     text-align: center;
@@ -90,16 +95,17 @@ input,select{
 }
 .resData{ 
     display: flex;
-    height: 70%;
+    height: 80%;
 }
-.resData div{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: gray; 
+.resData div{  
+    display: grid;
+    background: #a9e0e5;
     margin: 2%;
     border-radius: 10px;
     font-size: x-large;
+    justify-items: center;
+    align-items: center;
+    
 }
 .resTXT{
     width: 23%;
@@ -117,5 +123,9 @@ input,select{
     height: 100%;
 }
 .restML{
+    border: inset 3px;
     width: 73%;
+}
+#res{ 
+    width: 100%;
 }
