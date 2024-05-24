@@ -9,56 +9,25 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
-            <header>
-                <div class="menu">
-                    <div><img width="40px" src="images/menu.png" alt=""></div>
-                </div>
-                <div class="title">
-                    <div>Calcular gotas</div>
-                </div>
-            </header>
-        </div>
-        <div class="datos">
-            <div class="entryData">
-                <div class="txtEntry">ml</div>
-                <div class="inputEntry"><input id="ml" type="number"></div>
+    <div id="header" class="header">
+        <header>
+            <div id="menu" class="menu">
+                <div><img width="35px" src="images/menu.png" alt=""></div>
             </div>
-            <div class="entryData">
-                <div class="txtEntry">Equipo</div>
-                <div class="inputEntry">
-                    <select id="selectEquipo">
-                        <option value="" selected>Seleccione el quipo</option>
-                        <option value=15 class="">Macrogotero</option>
-                        <option value=20 class="">Normogotero</option>
-                        <option value=60 class="">Microgotero</option>
-                    </select>
-                </div>
+            <div class="title">
+                <div>Calcular gotas</div>
             </div>
-            <div class="entryData">
-                <div class="txtEntry">Tiempo</div>
-                <div class="inputEntry">
-                    <input id="tiempo" type="text">
-                </div>
-            </div>
-        </div>
-        <div class="resultados">
-            <div class="resData">
-                <div class="resTXT">
-                    <div>
-                        <button onclick="calcular()">
-                        <img height="60px" src="images/echo.png">
-                        </button>
-                    </div>
-                </div>
-                <div class="restML">
-                    <div id="res">0 gts</div>
-                </div>
-            </div>
+        </header>
+        
+        <div class="opciones" style="display: none;" id="opciones"  >
+            
         </div>
     </div>
-    <script src="javascripts/main.js"></script>
+    <% if (""+file+"" == "gotas") { %>
+        <p><%- include gotas %></p>
+    <% } else { %>
+        <p>Please log in</p>
+    <% } %>
 </body>
 
 </html>

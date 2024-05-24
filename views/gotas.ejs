@@ -1,0 +1,40 @@
+<div class="content">
+    <div class="datos">
+        <div class="entryData">
+            <div class="txtEntry">ml</div>
+            <div class="inputEntry"><input id="ml" type="number"></div>
+        </div>
+        <div class="entryData">
+            <div class="txtEntry">Equipo</div>
+            <div class="inputEntry">
+                <select id="selectEquipo">
+                    <option value="" selected>Seleccione el quipo</option>
+                    <option value=15 class="">Macrogotero(15)</option>
+                    <option value=20 class="">Normogotero(20)</option>
+                    <option value=60 class="">Microgotero(60)</option>
+                </select>
+            </div>
+        </div>
+        <div class="entryData">
+            <div class="txtEntry">Tiempo</div>
+            <div class="inputEntry">
+                <input id="tiempo" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="resultados">
+        <div class="resData">
+            <div class="resTXT">
+                <div>
+                    <button onclick="calcularGotas()">
+                        <img height="60px" src="images/echo.png">
+                    </button>
+                </div>
+            </div>
+            <div class="restML">
+                <div id="res">0 gts</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascripts/main.js"></script>
